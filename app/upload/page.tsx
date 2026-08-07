@@ -25,7 +25,7 @@ function UploadForm() {
   const [branch, setBranch] = useState('IT');
   const [semester, setSemester] = useState(1);
   const [subjectId, setSubjectId] = useState('');
-  const [type, setType] = useState<'End-Sem' | 'Class Test'>('End-Sem');
+  const [type, setType] = useState<'End/Odd-Sem' | 'Class Test'>('End/Odd-Sem');
   const [year, setYear] = useState(new Date().getFullYear());
   const [file, setFile] = useState<File | null>(null);
   const [error, setError] = useState('');
