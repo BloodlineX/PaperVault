@@ -9,8 +9,8 @@ export default function Mascot() {
     <div className="mascot-wrap" aria-hidden="true">
       <svg
         viewBox="0 0 140 140"
-        width="90"
-        height="90"
+        width="150"
+        height="150"
         className="mascot-float"
       >
         {/* shadow */}
@@ -81,7 +81,7 @@ export default function Mascot() {
           96% { transform: scaleY(0.1); }
         }
         @media (max-width: 600px) {
-          .mascot-wrap svg { width: 64px; height: 64px; }
+          .mascot-wrap svg { width: 150px; height: 150px; }
         }
       `}</style>
     </div>
