@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import Header from '@/components/Header';
+import Mascot from '@/components/Mascot';
 
 export const metadata: Metadata = {
   title: 'PaperVault',
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           {children}
         </div>
+        <Mascot/>
       </body>
     </html>
   );
