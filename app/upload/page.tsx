@@ -129,7 +129,7 @@ function UploadForm() {
         <div className="form-group full">
           <label>Paper type</label>
           <div className="type-radio-group">
-            <div className={`type-radio ${type === 'End-Sem' ? 'selected' : ''}`} onClick={() => setType('End-Sem')}>End-Sem</div>
+            <div className={`type-radio ${type === 'End/Odd-Sem' ? 'selected' : ''}`} onClick={() => setType('End/Odd-Sem')}>End/Odd-Sem</div>
             <div className={`type-radio ${type === 'Class Test' ? 'selected' : ''}`} onClick={() => setType('Class Test')}>Class Test</div>
           </div>
         </div>
