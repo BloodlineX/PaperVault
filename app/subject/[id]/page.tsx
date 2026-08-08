@@ -45,7 +45,7 @@ export default function SubjectDetailPage() {
   async function viewPaper(p: Paper) {
     const { data, error } = await supabase.storage.from('papers').createSignedUrl(p.file_path, 60 * 5);
     if (error || !data) { alert('Could not open the file — it may have been removed.'); return; }
-    window.open(data.signedUrl, '_blank');
+    window.open(data.signedUrl, '_self');
   }
 
   async function approve(p: Paper) {
